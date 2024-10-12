@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <main class="min-h-screen bg-[#1d3acd] bg-[url(/images/background.png)] bg-no-repeat bg-center">
+    <main class="min-h-screen bg-black bg-[url(/images/background.png)] bg-no-repeat bg-center">
         <!-- home section -->
         <section onclick="play()" id="home_section" class="min-h-screen flex flex-col justify-center">
             <div class="text-white flex flex-col items-center gap-10">
@@ -61,14 +61,14 @@
                         <kbd id="l" class="kbd">l</kbd>
                     </div>
                     <div class="my-1 flex w-full justify-center gap-1">
-                        <kbd class="kbd">z</kbd>
-                        <kbd class="kbd">x</kbd>
-                        <kbd class="kbd">c</kbd>
-                        <kbd class="kbd">v</kbd>
-                        <kbd class="kbd">b</kbd>
-                        <kbd class="kbd">n</kbd>
-                        <kbd class="kbd">m</kbd>
-                        <kbd class="kbd">/</kbd>
+                        <kbd id="z" class="kbd">z</kbd>
+                        <kbd id="x" class="kbd">x</kbd>
+                        <kbd id="c" class="kbd">c</kbd>
+                        <kbd id="v" class="kbd">v</kbd>
+                        <kbd id="b" class="kbd">b</kbd>
+                        <kbd id="n" class="kbd">n</kbd>
+                        <kbd id="m" class="kbd">m</kbd>
+                        <kbd id="/" class="kbd">/</kbd>
                     </div>
                 </div>
                 <!-- life score -->
@@ -76,13 +76,13 @@
                     <button class="btn rounded-full border-none bg-[#894189FF] text-white">
                         Life
                         <img src="/images/heart.svg" alt="">
-                        <span>1</span>
+                        <span id="current_life">5</span>
                     </button>
 
                     <button class="btn rounded-full border-none bg-[#360490FF] text-white">
                         Score
                         <img src="/images/dollar.png" alt="">
-                        <span>1</span>
+                        <span id="current_score">0</span>
                     </button>
                 </div>
             </div>
