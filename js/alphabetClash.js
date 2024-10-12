@@ -23,6 +23,9 @@ function gameOver(){
 }
 document.addEventListener('keyup', (event)=>{
     const playerPressed = event.key
+    if(playerPressed === 'Escape'){
+        gameOver()
+    }
     const currentAlphabet = document.getElementById('current_alphabet').innerText
     const lowerCaseAlphabet = currentAlphabet.toLowerCase()
     if(playerPressed === lowerCaseAlphabet){
