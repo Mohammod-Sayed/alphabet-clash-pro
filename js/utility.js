@@ -27,3 +27,14 @@ function getRendomAlphabet(){
     const alphabet = alphabets[index]
     return alphabet
 }
+
+function getCurrentTextValueByID(elementID){
+    const currentValue = document.getElementById(elementID)
+    const currentValueText = parseInt(currentValue.innerText)
+    return currentValueText
+}
+
+function setInnerTextValueByID(elementID, value){
+    const currentValue = document.getElementById(elementID)
+    currentValue.innerText = value
+}

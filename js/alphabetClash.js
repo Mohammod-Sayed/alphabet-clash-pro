@@ -17,15 +17,14 @@ document.addEventListener('keyup', (event)=>{
     if(playerPressed === lowerCaseAlphabet){
         removeBackgroundColorByID(lowerCaseAlphabet)
         continueGame()
-        const currentScore = document.getElementById('current_score')
-        const currentScoreText = parseInt(currentScore.innerText)
+        
+        const currentScoreText = getCurrentTextValueByID('current_score')
         const newScore = currentScoreText+1
-        currentScore.innerText = newScore
+        setInnerTextValueByID('current_score', newScore)
     }
     else{
-        const currentLife = document.getElementById('current_life')
-        const currentLifeText = parseInt(currentLife.innerText)
+        const currentLifeText = getCurrentTextValueByID('current_life')
         const newLife = currentLifeText-1
-        currentLife.innerText = newLife 
+        setInnerTextValueByID('current_life', newLife)
     }
 })
